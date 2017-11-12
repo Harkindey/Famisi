@@ -28,27 +28,29 @@ class Main extends React.Component {
       console.log(choice)
     }
     renderQuestion() {
-        const index = Math.floor(Math.random() * 3)
-        console.log(index);
-        const colorGroup= Math.floor(Math.random() * 9)
+        const question = this.props.data
+        const index = Math.floor(Math.random() * question.length)
+        const colorGroup= Math.floor(Math.random() * 10)
         const colorindex = Math.floor(Math.random() * 5)
-
-        const question = this.props.data[index]
         const colors = this.props.color[colorGroup]
+        const checkAnswer = (id,) => {
+          if (question[index] === id)
+            console.log('correct Answer')
+        }
       return(
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column',}}>
-          <Text style={styles.word,[colors.colorindex]}>{question.word}</Text>
-          <Text style={{fontSize: 20, paddingBottom: x * 0.5}}>{question.meaning}</Text>
+          <Text style={[styles.word,{color: colors[colorindex]}]}>{question[index].word}</Text>
+          <Text style={{fontSize: 20, paddingBottom: x * 0.5}}>{question[index].meaning}</Text>
           <View style={{flexDirection: 'column', justifyContent:'flex-end'}}>
-          {question.options.map((item, index)=> {
+          {question[index].options.map((item, index)=> {
             return(
               <View style={styles.innerStyle} key={index}>
                 <Button 
                 buttonStyle={styles.buttonStyle}
                 large
-                backgroundColor={colors.colorindex}
+                backgroundColor={colors[colorindex]}
                 title={item}
-                onPress={() => console.log(index)}
+                onPress={checkAnswer.bind(null,index)}
                 />
               </View>
               )
