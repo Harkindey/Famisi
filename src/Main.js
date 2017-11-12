@@ -33,10 +33,13 @@ class Main extends React.Component {
         const colorGroup= Math.floor(Math.random() * 50)
         const colorindex = Math.floor(Math.random() * 5)
         const colors = this.props.color[colorGroup]
-        const checkAnswer = (id,) => {
+        const checkAnswer = (id) => {
           console.log(question[index].correctIndex, id);
-          if (question[index].correctIndex === id)
-            console.log('correct Answer')
+          if (question[index].correctIndex === id){
+            console.log('Correct Answer')
+          }else {
+            console.log('Wrong Answer')
+          }
         }
       return(
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column',}}>
