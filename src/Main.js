@@ -2,12 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-elements'
 import Dimensions from 'Dimensions';
-import Result from './Result'
+//import Result from './Result'
 
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
 
-import db from './db';
 
 const Result = (props) => {
   return (
@@ -18,49 +17,77 @@ const Result = (props) => {
 }
 
 class Main extends React.Component {
+    constructor(props){
+      super(props);
+    }
 
-  checkAnswer = () => {
-    console.log('bean');
-    return(
-      <View style={{flex: 1 , backgroundColor: 'rgba(0,0,0,0.2)', justifyContent: 'center', alignItems: 'center'}}>
-        <Text>Correct</Text>
-      </View>
-    )
-  }
+    componentWillMount(){
+      console.log(this.props);
+    }
+    checkAnswer(choice){
+      console.log(choice)
+    }
+    renderQuestion() {
+        const index = Math.floor(Math.random() * 3)
+        console.log(index);
+        const colorGroup= Math.floor(Math.random() * 9)
+        const colorindex = Math.floor(Math.random() * 5)
+
+        const question = this.props.data[index]
+        const colors = this.props.color[colorGroup]
+      return(
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column',}}>
+          <Text style={styles.word,[colors.colorindex]}>{question.word}</Text>
+          <Text style={{fontSize: 20, paddingBottom: x * 0.5}}>{question.meaning}</Text>
+          <View style={{flexDirection: 'column', justifyContent:'flex-end'}}>
+          {question.options.map((item, index)=> {
+            return(
+              <View style={styles.innerStyle} key={index}>
+                <Button 
+                buttonStyle={styles.buttonStyle}
+                large
+                backgroundColor={colors.colorindex}
+                title={item}
+                onPress={() => console.log(index)}
+                />
+              </View>
+              )
+          })}
+            {/* <View style={styles.innerStyle}>
+                <Button 
+                buttonStyle={styles.buttonStyle}
+                large
+                backgroundColor="#1EB9B9"
+                title={question.options[0]}
+                onPress={() => console.log(this)}
+                />
+            </View>
+            <View style={styles.innerStyle}>
+                <Button
+                large
+                buttonStyle={styles.buttonStyle}
+                backgroundColor="#1EB9B9"
+                title={question.options[1]}
+                onPress={() => console.log(this)}
+                />
+            </View>
+            <View style={styles.innerStyle}>
+                <Button 
+                buttonStyle={styles.buttonStyle}
+                large
+                backgroundColor="#1EB9B9"
+                title={question.options[2]}
+                onPress={() => console.log(this)}
+                />
+            </View> */}
+          </View>      
+          </View>
+      )
+    }
   render() {
     return (
       <View style={styles.container}>
-              <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column',}}>
-                <Text style={styles.word}>ABURO</Text>
-                <Text style={{fontSize: 20, paddingBottom: x * 0.5}}>A Younger One</Text>
-                <View style={{flexDirection: 'column', justifyContent:'flex-end'}}>
-                  <View style={styles.innerStyle}>
-                      <Button 
-                      buttonStyle={styles.buttonStyle}
-                      large
-                      backgroundColor="#1EB9B9"
-                      title='àbúrò'
-                      onPress={this.checkAnswer}
-                      />
-                  </View>
-                  <View style={styles.innerStyle}>
-                      <Button
-                      large
-                      buttonStyle={styles.buttonStyle}
-                      backgroundColor="#1EB9B9"
-                      title='aburo'
-                      />
-                  </View>
-                  <View style={styles.innerStyle}>
-                      <Button 
-                      buttonStyle={styles.buttonStyle}
-                      large
-                      backgroundColor="#1EB9B9"
-                      title='ábúrọ'
-                      />
-                  </View>
-                </View>      
-                </View>
+        {this.renderQuestion()}
       </View>
     );
   }
