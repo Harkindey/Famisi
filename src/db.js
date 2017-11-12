@@ -6,7 +6,7 @@ const db = [{
             "aburo",
             "ábúrọ"
         ],
-        "correctIndex": 1
+        "correctIndex": 0
     },
     {
         "word": "ogun",
@@ -16,7 +16,7 @@ const db = [{
             "ogun",
             "ọgún"
         ],
-        "correctIndex": 2
+        "correctIndex": 1
     },
     {
         "word": "igba",
@@ -26,7 +26,7 @@ const db = [{
             "ìgbà",
             "igbá"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
     }
 ]
 

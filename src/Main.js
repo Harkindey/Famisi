@@ -30,11 +30,12 @@ class Main extends React.Component {
     renderQuestion() {
         const question = this.props.data
         const index = Math.floor(Math.random() * question.length)
-        const colorGroup= Math.floor(Math.random() * 10)
+        const colorGroup= Math.floor(Math.random() * 15)
         const colorindex = Math.floor(Math.random() * 5)
         const colors = this.props.color[colorGroup]
         const checkAnswer = (id,) => {
-          if (question[index] === id)
+          console.log(question[index].correctIndex, id);
+          if (question[index].correctIndex === id)
             console.log('correct Answer')
         }
       return(
