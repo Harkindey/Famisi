@@ -9,6 +9,14 @@ const y = Dimensions.get('window').height;
 
 import db from './db';
 
+const Result = (props) => {
+  return (
+  <View style={{flex: 1 , backgroundColor: 'rgba(0,0,0,0.2)', justifyContent: 'center', alignItems: 'center'}}>
+    <Text>Correct</Text>
+  </View>
+  )
+}
+
 class Main extends React.Component {
 
   checkAnswer = () => {
@@ -25,7 +33,7 @@ class Main extends React.Component {
               <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column',}}>
                 <Text style={styles.word}>ABURO</Text>
                 <Text style={{fontSize: 20, paddingBottom: x * 0.5}}>A Younger One</Text>
-                <View style={{flexDirection: 'column', paddingTop: 50}}>
+                <View style={{flexDirection: 'column', justifyContent:'flex-end'}}>
                   <View style={styles.innerStyle}>
                       <Button 
                       buttonStyle={styles.buttonStyle}

@@ -1,36 +1,35 @@
 const db = [{
         "word": "aburo",
-        "meaning" : "The Younger One",
+        "meaning": "The Younger One",
         "options": [
             "àbúrò",
             "aburo",
-            "ábúrọ",
-            "àbùrọ̀"
+            "ábúrọ"
         ],
         "correctIndex": 1
     },
     {
-        "word" : "ogun",
+        "word": "ogun",
         "meaning": "War",
         "options": [
             "ògùn",
             "ogun",
-            "ọgún",
             "ọgún"
         ],
-        "correctIndex" : 2
+        "correctIndex": 2
     },
-   {
+    {
         "word": "igba",
         "menaing": "Calabash",
         "options": [
             "igba",
             "ìgbà",
-            "igbá",
-            "ígbà"
+            "igbá"
         ],
-        "correctIndex" : 3
+        "correctIndex": 3
     }
 ]
+
+
 
 export default db
