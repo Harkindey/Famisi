@@ -19,24 +19,40 @@ const Result = (props) => {
 class Main extends React.Component {
     constructor(props){
       super(props);
+      this.state ={
+        question : this.props.data,
+        color: this.props.color,
+        index: ''
+      }
     }
 
     componentWillMount(){
-      console.log(this.props);
-    }
-    checkAnswer(choice){
-      console.log(choice)
+      
+      if (!this.state.question){
+          return (
+            <Result />
+          )
+      }
+      
     }
     renderQuestion() {
-        const question = this.props.data
-        const index = Math.floor(Math.random() * question.length)
-        const colorGroup= Math.floor(Math.random() * 50)
-        const colorindex = Math.floor(Math.random() * 5)
-        const colors = this.props.color[colorGroup]
-        const checkAnswer = (id) => {
-          console.log(question[index].correctIndex, id);
+      console.log(this.state);
+      const { question, color } = this.state
+      const index = Math.floor(Math.random() * question.length);
+      const colorGroup= Math.floor(Math.random() * 50);
+      const colorindex = Math.floor(Math.random() * 5);
+      const colors = color[colorGroup];
+
+      const checkAnswer = (id) => {
+          //console.log(question[index].correctIndex, id);
           if (question[index].correctIndex === id){
             console.log('Correct Answer')
+            question.splice(index, 1)
+            this.setState({
+              question
+            })
+           // console.log(question)
+            
           }else {
             console.log('Wrong Answer')
           }
@@ -59,33 +75,6 @@ class Main extends React.Component {
               </View>
               )
           })}
-            {/* <View style={styles.innerStyle}>
-                <Button 
-                buttonStyle={styles.buttonStyle}
-                large
-                backgroundColor="#1EB9B9"
-                title={question.options[0]}
-                onPress={() => console.log(this)}
-                />
-            </View>
-            <View style={styles.innerStyle}>
-                <Button
-                large
-                buttonStyle={styles.buttonStyle}
-                backgroundColor="#1EB9B9"
-                title={question.options[1]}
-                onPress={() => console.log(this)}
-                />
-            </View>
-            <View style={styles.innerStyle}>
-                <Button 
-                buttonStyle={styles.buttonStyle}
-                large
-                backgroundColor="#1EB9B9"
-                title={question.options[2]}
-                onPress={() => console.log(this)}
-                />
-            </View> */}
           </View>      
           </View>
       )
