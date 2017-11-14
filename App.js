@@ -11,7 +11,6 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Main data={db} color={color}/>
-        {/* <Result /> */}
       </View>
     );
   }

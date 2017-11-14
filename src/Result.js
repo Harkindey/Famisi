@@ -14,29 +14,34 @@ class Result extends Component {
   }
 
   render() {
-    if(!this.props.show) {
-      return null;
-    }
-
     return (
-      <View style={{flex: 1, flexDirection:'column', width: x*0.5 , height:y * 0.5  }}>
+      <View style={{marginTop: 22}}>
         <Modal
           animationType="slide"
           transparent={false}
-          visible={this.props.show}
+          visible={this.state.modalVisible}
           onRequestClose={() => {alert("Modal has been closed.")}}
           >
          <View style={{marginTop: 22}}>
           <View>
             <Text>Hello World!</Text>
-            {/* <TouchableHighlight onPress={() => {
+
+            <TouchableHighlight onPress={() => {
               this.setModalVisible(!this.state.modalVisible)
             }}>
               <Text>Hide Modal</Text>
-            </TouchableHighlight> */}
+            </TouchableHighlight>
+
           </View>
          </View>
         </Modal>
+
+        <TouchableHighlight onPress={() => {
+          this.setModalVisible(true)
+        }}>
+          <Text>Show Modal</Text>
+        </TouchableHighlight>
+
       </View>
     );
   }

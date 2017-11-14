@@ -1,20 +1,47 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Modal} from 'react-native';
 import { Button } from 'react-native-elements'
 import Dimensions from 'Dimensions';
-import Result from './Result'
+//import Result from './Result'
 
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
 
 
-// const Result = (props) => {
-//   return (
-//   <View style={{flex: 1 , backgroundColor: 'rgba(0,0,0,0.2)', justifyContent: 'center', alignItems: 'center'}}>
-//     <Text>Correct</Text>
-//   </View>
-//   )
-// }
+const Result = (props) => {
+  let { show, finished, question, color, score } = this.state
+  return (
+  <View style={{top:y * 0.5, left:x * 0.5}}>
+   <Modal
+    animationType="fade"
+    transparent={false}
+    visible={show}
+    onRequestClose={() => {alert("Modal has been closed.")}}
+    >
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.4)'}}>
+        <View>
+          <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>{
+            (finished) ? 'FINAL SCORE' : 'GAME OVER'  
+          }</Text>
+          <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>SCORE: {score}</Text>
+        </View>
+        <View style={{flexDirection: 'row'}}>
+        <Button 
+                buttonStyle={{borderRadius: 10, width: x * 0.4}}
+                large
+                backgroundColor='black'
+                title='Replay'
+                onPress={() => this.setState({
+                  question : this.props.data,
+                  color: this.props.color
+                })}
+                />
+      </View>
+      </View>
+    </Modal>
+  </View>
+  )
+}
 
 class Main extends React.Component {
     constructor(props){
@@ -23,19 +50,50 @@ class Main extends React.Component {
         question : this.props.data,
         color: this.props.color,
         score: 0,
-        modalVisible: false,
+        ismodalVisible: false,
+        finished: false
       }
     }
 
-    componentWillMount(){
-      
-      if (!this.state.question){
-          return (
-            <Result />
-          )
-      }
-      
+    componentWillMount(){    
     }
+
+    renderResult(){
+      let { show, finished, question, color, score } = this.state
+      return (
+        <View style={{top:y * 0.5, left:x * 0.5}}>
+        <Modal
+         animationType="fade"
+         transparent={false}
+         visible={show}
+         onRequestClose={() => {alert("Modal has been closed.")}}
+         >
+           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.4)'}}>
+             <View>
+               <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>{
+                 (finished) ? 'FINAL SCORE' : 'GAME OVER'  
+               }</Text>
+               <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>SCORE: {score}</Text>
+             </View>
+             <View style={{flexDirection: 'row'}}>
+             <Button 
+                     buttonStyle={{borderRadius: 10, width: x * 0.4}}
+                     large
+                     backgroundColor='black'
+                     title='Replay'
+                     onPress={() => this.setState({
+                       question : question,
+                       color: color,
+                       ismodalVisible: false
+                     })}
+                     />
+           </View>
+           </View>
+         </Modal>
+       </View>
+      )
+    }
+  
     renderQuestion() {
       console.log(this.state);
       let { question, color, score  } = this.state
@@ -44,20 +102,27 @@ class Main extends React.Component {
       const colorindex = Math.floor(Math.random() * 5);
       const colors = color[colorGroup];
 
-      const checkAnswer = (id) => {
-          //console.log(question[index].correctIndex, id);
+      const checkAnswer = (id) => { 
           if (question[index].correctIndex === id){
-            console.log('Correct Answer')
-            question.splice(index, 1)
-            this.setState({
-              question,
-              score:  score+=1
-            })
-            console.log(score);
+              if(question.length > 1){
+                    console.log('Correct Answer')
+                    question.splice(index, 1)
+                    this.setState({
+                      question,
+                      score: score+=1
+                    })
+                  // console.log(score);
+                  } else {
+                  this.setState({
+                    score:  score+=1,
+                    finished: true,
+                    ismodalVisible: true
+                  })
+                }
           }else {
             console.log(score);
             console.log('Wrong Answer')
-            this.setState({modalVisible: true});
+            this.setState({ismodalVisible: true});
           }
         }
       return(
@@ -83,10 +148,18 @@ class Main extends React.Component {
       )
     }
   render() {
+    if(this.state.ismodalVisible){
+      return (
+        <View>
+          {this.renderResult()}
+        </View>
+      )
+    }
     return (
-      <View style={styles.container}>
-        {this.renderQuestion()}
-        {<Result show={this.state.modalVisible}/>}
+      <View style={{flex:1}}>     
+        <View style={styles.container}>
+          {this.renderQuestion()}   
+        </View>
       </View>
     );
   }
@@ -98,6 +171,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    height: y
   },
   word: {
     color: '#1EB9B9',
