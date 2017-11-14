@@ -2,19 +2,19 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-elements'
 import Dimensions from 'Dimensions';
-//import Result from './Result'
+import Result from './Result'
 
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
 
 
-const Result = (props) => {
-  return (
-  <View style={{flex: 1 , backgroundColor: 'rgba(0,0,0,0.2)', justifyContent: 'center', alignItems: 'center'}}>
-    <Text>Correct</Text>
-  </View>
-  )
-}
+// const Result = (props) => {
+//   return (
+//   <View style={{flex: 1 , backgroundColor: 'rgba(0,0,0,0.2)', justifyContent: 'center', alignItems: 'center'}}>
+//     <Text>Correct</Text>
+//   </View>
+//   )
+// }
 
 class Main extends React.Component {
     constructor(props){
@@ -22,7 +22,8 @@ class Main extends React.Component {
       this.state ={
         question : this.props.data,
         color: this.props.color,
-        index: ''
+        score: 0,
+        modalVisible: false,
       }
     }
 
@@ -37,7 +38,7 @@ class Main extends React.Component {
     }
     renderQuestion() {
       console.log(this.state);
-      const { question, color } = this.state
+      let { question, color, score  } = this.state
       const index = Math.floor(Math.random() * question.length);
       const colorGroup= Math.floor(Math.random() * 50);
       const colorindex = Math.floor(Math.random() * 5);
@@ -49,12 +50,14 @@ class Main extends React.Component {
             console.log('Correct Answer')
             question.splice(index, 1)
             this.setState({
-              question
+              question,
+              score:  score+=1
             })
-           // console.log(question)
-            
+            console.log(score);
           }else {
+            console.log(score);
             console.log('Wrong Answer')
+            this.setState({modalVisible: true});
           }
         }
       return(
@@ -83,6 +86,7 @@ class Main extends React.Component {
     return (
       <View style={styles.container}>
         {this.renderQuestion()}
+        {<Result show={this.state.modalVisible}/>}
       </View>
     );
   }

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Modal, Text, TouchableHighlight, View } from 'react-native';
+import Dimensions from 'Dimensions';
+const x = Dimensions.get('window').width;
+const y = Dimensions.get('window').height;
 
 class Result extends Component {
   state = {
@@ -11,34 +14,29 @@ class Result extends Component {
   }
 
   render() {
+    if(!this.props.show) {
+      return null;
+    }
+
     return (
-      <View style={{marginTop: 22}}>
+      <View style={{flex: 1, flexDirection:'column', width: x*0.5 , height:y * 0.5  }}>
         <Modal
           animationType="slide"
           transparent={false}
-          visible={this.state.modalVisible}
+          visible={this.props.show}
           onRequestClose={() => {alert("Modal has been closed.")}}
           >
          <View style={{marginTop: 22}}>
           <View>
             <Text>Hello World!</Text>
-
-            <TouchableHighlight onPress={() => {
+            {/* <TouchableHighlight onPress={() => {
               this.setModalVisible(!this.state.modalVisible)
             }}>
               <Text>Hide Modal</Text>
-            </TouchableHighlight>
-
+            </TouchableHighlight> */}
           </View>
          </View>
         </Modal>
-
-        <TouchableHighlight onPress={() => {
-          this.setModalVisible(true)
-        }}>
-          <Text>Show Modal</Text>
-        </TouchableHighlight>
-
       </View>
     );
   }
