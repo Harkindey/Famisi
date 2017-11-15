@@ -2,46 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View, Modal} from 'react-native';
 import { Button } from 'react-native-elements'
 import Dimensions from 'Dimensions';
-//import Result from './Result'
 
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
 
-
-const Result = (props) => {
-  let { show, finished, question, color, score } = this.state
-  return (
-  <View style={{top:y * 0.5, left:x * 0.5}}>
-   <Modal
-    animationType="fade"
-    transparent={false}
-    visible={show}
-    onRequestClose={() => {alert("Modal has been closed.")}}
-    >
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.4)'}}>
-        <View>
-          <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>{
-            (finished) ? 'FINAL SCORE' : 'GAME OVER'  
-          }</Text>
-          <Text style={{fontWeight: 'bold', fontSize: 30, fontWeight: 'bold'}}>SCORE: {score}</Text>
-        </View>
-        <View style={{flexDirection: 'row'}}>
-        <Button 
-                buttonStyle={{borderRadius: 10, width: x * 0.4}}
-                large
-                backgroundColor='black'
-                title='Replay'
-                onPress={() => this.setState({
-                  question : this.props.data,
-                  color: this.props.color
-                })}
-                />
-      </View>
-      </View>
-    </Modal>
-  </View>
-  )
-}
 
 class Main extends React.Component {
     constructor(props){
