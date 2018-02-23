@@ -2,6 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, View, Modal } from 'react-native';
 import { Button } from 'react-native-elements'
 import Dimensions from 'Dimensions';
+import CountdownCircle from 'react-native-countdown-circle'
+import color from './color'
+import db from './db'
 
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
@@ -11,15 +14,19 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: this.props.data,
-      color: this.props.color,
+      question: [...this.props.navigation.state.params.data],
+      color: color,
       score: 0,
       ismodalVisible: false,
-      finished: false
+      finished: false,
+      seconds: 10,
+      startCountDown: false,
+      CountdownCircleVisible: false
     }
   }
 
   componentWillMount() {
+
   }
 
   renderResult() {
@@ -45,13 +52,29 @@ class Main extends React.Component {
                 large
                 backgroundColor='black'
                 title='Replay'
-                onPress={() => this.setState({
-                  question: this.props.data,
-                  color: color,
-                  ismodalVisible: false,
-                  score: 0,
-                  finished: false
-                })}
+                onPress={() => {
+                  this.setState({
+                    question: [...this.props.navigation.state.params.data],
+                    color: color,
+                    ismodalVisible: false,
+                    score: 0,
+                    finished: false,
+                    CountdownCircleVisible: false,
+                    startCountDown: false
+                  })
+                }}
+              />
+              <Button
+                buttonStyle={{ borderRadius: 10, width: x * 0.4 }}
+                large
+                backgroundColor='black'
+                title='Main Menu'
+                onPress={() => {
+                  this.props.navigation.navigate('welcome')
+                  this.setState({
+                    ismodalVisible: false,
+                  })
+                }}
               />
             </View>
           </View>
@@ -75,7 +98,10 @@ class Main extends React.Component {
           question.splice(index, 1)
           this.setState({
             question,
-            score: score += 1
+            score: score += 1,
+            seconds: 10,
+            CountdownCircleVisible: true,
+            startCountDown: true
           })
           // console.log(score);
         } else {
@@ -93,6 +119,21 @@ class Main extends React.Component {
     }
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
+        {(this.state.CountdownCircleVisible) ?
+          <CountdownCircle
+            seconds={this.state.seconds}
+            radius={30}
+            borderWidth={8}
+            color="#ff003f"
+            bgColor="#fff"
+            textStyle={{ fontSize: 20 }}
+            onTimeElapsed={() => {
+              console.log('Elapsed!')
+              this.setState({ ismodalVisible: true });
+            }}
+            start={this.state.startCountDown}
+          /> :
+          null}
         <Text style={[styles.word, { color: colors[colorindex] }]}>{question[index].word}</Text>
         <Text style={{ fontSize: 20, paddingBottom: x * 0.5 }}>{question[index].meaning}</Text>
         <View style={{ flexDirection: 'column', justifyContent: 'flex-end' }}>

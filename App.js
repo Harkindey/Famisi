@@ -1,16 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { TabNavigator, StackNavigator } from 'react-navigation';
+import Welcome from './src/Welcome';
 import Main from './src/Main';
 import Result from './src/Result'
-import db from './src/db';
-import color from './src/color'
 
+
+
+const MainNavigator = StackNavigator({
+  welcome: { screen: Welcome },
+  main: { screen: Main },
+}, {
+    headerMode: 'none'
+  });
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Main data={db} color={color}/>
+        <MainNavigator />
       </View>
     );
   }
@@ -18,9 +26,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
   },
 });
