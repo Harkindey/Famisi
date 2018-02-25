@@ -73,6 +73,7 @@ class Main extends React.Component {
                   this.props.navigation.navigate('welcome')
                   this.setState({
                     ismodalVisible: false,
+                    CountdownCircleVisible: false,
                   })
                 }}
               />

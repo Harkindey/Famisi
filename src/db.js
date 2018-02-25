@@ -99,12 +99,49 @@ const db = {
         ],
         "correctIndex": 2
     }],
-    intermediate: {
-
+    intermediate: [{
+        "word": "Ketekete",
+        "meaning": "Donkey",
+        "options": [
+            "kẹ̀tékẹ̀tẹ́",
+            "kẹ́tẹ́kẹ́tẹ́",
+            "ketẹkẹ́tẹ́"
+        ],
+        "correctIndex": 1
     },
-    hard: {
+    {
+        "word": "Igbiyanju",
+        "meaning": "Effort",
+        "options": [
+            "Ìgbìyànjú",
+            "Igbíyànjú",
+            "Igbìyànjú"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Abiyamọ",
+        "meaning": "Mother",
+        "options": [
+            "ábìyámọ̀",
+            "abìyamọ",
+            "abiyamọ"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Agadagodo",
+        "meaning": "Padlock",
+        "options": [
+            "àgádágodo",
+            "agádágodo",
+            "abiyamọ"
+        ],
+        "correctIndex": 0
+    }],
+    hard: [
 
-    }
+    ]
 }
 
 
