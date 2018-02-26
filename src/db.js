@@ -33,11 +33,11 @@ const db = {
         "word": "owo",
         "meaning": "Money",
         "options": [
+            "owó",
             "òwọ́",
-            "ówò",
-            "owó"
+            "ówò"
         ],
-        "correctIndex": 2
+        "correctIndex": 0
     },
     {
         "word": "aye",
@@ -63,39 +63,59 @@ const db = {
         "word": "aja",
         "meaning": "Dog",
         "options": [
+            "ajá",
             "àjà",
-            "aja",
-            "ajá"
+            "aja"
         ],
-        "correctIndex": 2
+        "correctIndex": 0
     },
     {
         "word": "aso",
         "meaning": "Cloth",
         "options": [
-            "asọ",
             "ásọ",
+            "asọ",
             "àṣọ́"
         ],
-        "correctIndex": 0
+        "correctIndex": 1
     },
     {
         "word": "dodo",
         "meaning": "Plantain",
         "options": [
             "dodo",
+            "dòdó",
             "dòdò",
-            "dòdó"
         ],
-        "correctIndex": 1
+        "correctIndex": 2
     },
     {
         "word": "iwe",
         "meaning": "Book",
         "options": [
+            "ìwé",
             "ìwẹ̀",
-            "íwẹ̀",
-            "ìwé"
+            "íwẹ̀"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Ipinle",
+        "meaning": "State",
+        "options": [
+            "Ípìnlẹ́",
+            "Ìpínlẹ̀",
+            "Ìpinlẹ̀"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Pepeye",
+        "meaning": "Duck",
+        "options": [
+            "Pẹ̀pẹ̀yẹ",
+            "Pèpẹ̀yé",
+            "Pẹ́pẹ́yẹ"
         ],
         "correctIndex": 2
     }],
@@ -135,9 +155,99 @@ const db = {
         "options": [
             "àgádágodo",
             "agádágodo",
-            "abiyamọ"
+            "àgadágodó"
         ],
         "correctIndex": 0
+    },
+    {
+        "word": "Peteesi",
+        "meaning": "Story Building",
+        "options": [
+            "pétẹ̀ẹsì",
+            "pẹ̀tẹ́ẹ̀ṣì",
+            "p̀ẹ̀tẹ̀ẹsi"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ibanuje",
+        "meaning": "Sadness",
+        "options": [
+            "Íbànújẹ̀",
+            "Ìbánújé",
+            "Ìbànújẹ́"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Aranmanda",
+        "meaning": "Amazing",
+        "options": [
+            "Àrànmàndà",
+            "Arànmàńdà",
+            "Àranmàńdá"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Alaimokan",
+        "meaning": "Ignorant",
+        "options": [
+            "Àláìm̀ọ̀kán",
+            "Aláìmọ̀kan",
+            "Álàìmọkán"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Akikanju",
+        "meaning": "The Mighty",
+        "options": [
+            "Àláìm̀ọ̀kán",
+            "Àkìkanjú",
+            "Ákikánju"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Alaimore",
+        "meaning": "Ingrate",
+        "options": [
+            "Aláìmore",
+            "Àláìmọ̀re",
+            "Aláímorè"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Alagemo",
+        "meaning": "Chameleon",
+        "options": [
+            "Alàgẹmọ̀",
+            "Alágemọ",
+            "Àlagèmọ"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Imototo",
+        "meaning": "Cleanliness",
+        "options": [
+            "Ímótótó",
+            "Ìmọ̀tọ̀tó",
+            "Ìmọ́tótó"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Ore-Ofe",
+        "meaning": "State",
+        "options": [
+            "Ore-Ofe",
+            "Òre-Ọ́fé",
+            "Ore-Ọ̀fẹ́"
+        ],
+        "correctIndex": 2
     }],
     hard: [
 
