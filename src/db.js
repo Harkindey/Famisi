@@ -118,6 +118,26 @@ const db = {
             "Pẹ́pẹ́yẹ"
         ],
         "correctIndex": 2
+    },
+    {
+        "word": "Kiniun",
+        "meaning": "Lion",
+        "options": [
+            "kìnìún",
+            "kìníùn",
+            "kìnìùn"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Ekun",
+        "meaning": "Tiger",
+        "options": [
+            "ekun",
+            "ekùn",
+            "èkún"
+        ],
+        "correctIndex": 1
     }],
     intermediate: [{
         "word": "Ketekete",
@@ -248,10 +268,87 @@ const db = {
             "Ore-Ọ̀fẹ́"
         ],
         "correctIndex": 2
+    },
+    {
+        "word": "Amotekun",
+        "meaning": "Leopard",
+        "options": [
+            "Àmọ̀tẹ̀kùn",
+            "Àmọ̀tekún",
+            "Àmòtèkùn"
+        ],
+        "correctIndex": 0
     }],
-    hard: [
-
-    ]
+    hard: [{
+        "word": "Iseyemeji",
+        "meaning": "Doubt",
+        "options": [
+            "Ìseyèméjì",
+            "Isèyèméji",
+            "Ìsẹyémẹ́jì"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Iyo-Oyinbo",
+        "meaning": "Sugar",
+        "options": [
+            "Ìyò-Ọyínbọ́",
+            "Iyọ̀-Òyìnbó",
+            "Ìyọ̀-Óyìnbó"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Irinsiwaju",
+        "meaning": "Moving Forward",
+        "options": [
+            "Ìrínsìwàjú",
+            "Írínsiwàjù",
+            "Ìrìnsìwájú"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Irukerudo",
+        "meaning": "Chaos",
+        "options": [
+            "ìrúkèrúdò",
+            "írùkérùdó",
+            "ìrùkèrùdò"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Iwe-Iroyin",
+        "meaning": "Newspaper",
+        "options": [
+            "Ìwé-Íróyín",
+            "Ìwé-Ìròyìn",
+            "Íwè-Ìròyìn"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Itolesese",
+        "meaning": "Orderly",
+        "options": [
+            "Itolẹ́sésẹ́",
+            "Ìtòlẹ́sésẹ́",
+            "Ìtòlẹ́sese"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Nitorikini",
+        "meaning": "Why",
+        "options": [
+            "Nítoríkíni",
+            "Nítorikínì",
+            "Nitòrikini"
+        ],
+        "correctIndex": 0
+    },]
 }
 
 
