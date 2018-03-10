@@ -223,7 +223,7 @@ const db = {
         "word": "Akikanju",
         "meaning": "The Mighty",
         "options": [
-            "Àláìm̀ọ̀kán",
+            "Akikanju",
             "Àkìkanjú",
             "Ákikánju"
         ],
@@ -261,7 +261,7 @@ const db = {
     },
     {
         "word": "Ore-Ofe",
-        "meaning": "State",
+        "meaning": "Grace",
         "options": [
             "Ore-Ofe",
             "Òre-Ọ́fé",
@@ -278,6 +278,96 @@ const db = {
             "Àmòtèkùn"
         ],
         "correctIndex": 0
+    },
+    {
+        "word": "Daradara",
+        "meaning": "Good",
+        "options": [
+            "dàradàra",
+            "dáradára",
+            "dàrádárà"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Darandaran",
+        "meaning": "Shepherd",
+        "options": [
+            "dàrandàran",
+            "dárandáran",
+            "darandaran"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Darajulo",
+        "meaning": "Shepherd",
+        "options": [
+            "dárajùlọ",
+            "dàrajúlọ̀",
+            "dárájùló"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Gbigbesoke",
+        "meaning": "Lifting Up",
+        "options": [
+            "Gbìgbẹ̀ṣokẹ̀",
+            "Gbígbésókè",
+            "Gbígbéṣòkè"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "igbesoke",
+        "meaning": "Elevation",
+        "options": [
+            "ìgbẹ̀sọ̀kẹ",
+            "ìgbẹ́sòkè",
+            "ìgbésókè"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Ibakedun",
+        "meaning": "Sympathy",
+        "options": [
+            "ìbákẹ́dún",
+            "ìbákèdùn",
+            "ibakẹ́dùn"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Idalare",
+        "meaning": "Justification",
+        "options": [
+            "Ìdalarè",
+            "Ìdálárè",
+            "Idalárè"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ojulumo",
+        "meaning": "Acquaintance",
+        "options": [
+            "Òjúlúmó",
+            "Ojùlumò",
+            "Ojúlùmọ̀"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Ojumomo",
+        "meaning": "Daylight",
+        "options": [
+            "Òjúmomọ́",
+            "Òjumọ̀mò",
+            "Ojúmọmọ"
+        ],
+        "correctIndex": 2
     }],
     hard: [{
         "word": "Iseyemeji",
@@ -344,11 +434,31 @@ const db = {
         "meaning": "Why",
         "options": [
             "Nítoríkíni",
-            "Nítorikínì",
+            "Nítorikíní",
             "Nitòrikini"
         ],
         "correctIndex": 0
-    },]
+    },
+    {
+        "word": "Alarekereke",
+        "meaning": "cunning person",
+        "options": [
+            "Alárèkẹrẹ́ké",
+            "Alárèkérèkè",
+            "Àlárẹ̀kérẹ̀ké"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Iyegimolese",
+        "meaning": "cunning person",
+        "options": [
+            "Ìyẹ̀gímọ̀lésẹ̀",
+            "Ìyègìmọ̀lẹ̀sè",
+            "Ìyegimólésè"
+        ],
+        "correctIndex": 2
+    }]
 }
 
 
