@@ -221,7 +221,7 @@ const db = {
     },
     {
         "word": "Akikanju",
-        "meaning": "The Mighty",
+        "meaning": "Brave",
         "options": [
             "Akikanju",
             "Àkìkanjú",
@@ -406,6 +406,36 @@ const db = {
             "Mọ́nọ́mọ́nọ́",
             "Mònòmònò",
             "Mọnọmọnọ"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Alagbara",
+        "meaning": "Powerful Person",
+        "options": [
+            "Alágbàrá",
+            "Alágbára",
+            "Alágbara"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Aseyori",
+        "meaning": "success",
+        "options": [
+            "Àseyòri",
+            "Àseyòrì",
+            "Àseyorí"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Sekeseke",
+        "meaning": "chains",
+        "options": [
+            "Sẹkẹ́sẹkẹ̀",
+            "Sẹkẹ́sẹ́kẹ́",
+            "Sẹ̀kẹsẹ́kẹ́"
         ],
         "correctIndex": 0
     }],
