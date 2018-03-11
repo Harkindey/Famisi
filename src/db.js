@@ -570,12 +570,12 @@ const db = {
         "correctIndex": 1
     },
     {
-        "word": "Olukuluku",
-        "meaning": "Individual",
+        "word": "Lagbedemeji",
+        "meaning": "Between",
         "options": [
-            "Òlúkùlùkù",
-            "Olúkúlùkù",
-            "Olúkúlùkù"
+            "lágbedèmẹ̀jí",
+            "lágbedẹ́mẹji",
+            "lágbedeméjì"
         ],
         "correctIndex": 2
     },
@@ -586,6 +586,66 @@ const db = {
             "kíkíyèsára",
             "kíkíyèṣarà",
             "kíkíyẹ̀sárà"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Niojogbogbo",
+        "meaning": "Daily",
+        "options": [
+            "Níọjògbógbọ́",
+            "Níọjọ́gbogbo",
+            "Níọjógbọ̀gbò"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Olodumare",
+        "meaning": "Almighty",
+        "options": [
+            "olódumarẹ̀",
+            "olódúmàré",
+            "olódùmarè"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Nikutukutu",
+        "meaning": "Early",
+        "options": [
+            "Níkùtùkùtù",
+            "Níkùtùkútù",
+            "Níkùtukutu"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Niwontunwonsi",
+        "meaning": "Moderately",
+        "options": [
+            "Níwọ̀ntùnwónṣí",
+            "Níwọ̀ntunwọ̀nsì",
+            "Níwọ̀ntùnwónṣí"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ojukokoro",
+        "meaning": "Coveteousness",
+        "options": [
+            "Ojúkọ̀kọ́rọ̀",
+            "Ojúkọ́kọ́rọ́",
+            "Ojúkòkòrò"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Abanidaro",
+        "meaning": "Sympathize",
+        "options": [
+            "Abánidárò",
+            "Abanìdárọ̀",
+            "Abánìdàrò"
         ],
         "correctIndex": 0
     }]
