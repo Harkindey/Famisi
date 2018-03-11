@@ -383,9 +383,9 @@ const db = {
         "word": "Akikanju",
         "meaning": "Brave",
         "options": [
-            "Akikanju",
-            "Àkìkanjú",
-            "Ákikánju"
+            "Akinkanju",
+            "Àkìnkanjú",
+            "Akínkanjú"
         ],
         "correctIndex": 2
     },
@@ -541,7 +541,7 @@ const db = {
     },
     {
         "word": "Ijakadi",
-        "meaning": "Fox",
+        "meaning": "Fight",
         "options": [
             "Ijàkàdì",
             "Ijàkadì",
