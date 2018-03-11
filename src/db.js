@@ -451,13 +451,143 @@ const db = {
     },
     {
         "word": "Iyegimolese",
-        "meaning": "cunning person",
+        "meaning": "Ruin",
         "options": [
             "Ìyẹ̀gímọ̀lésẹ̀",
             "Ìyègìmọ̀lẹ̀sè",
             "Ìyegimólésè"
         ],
         "correctIndex": 2
+    },
+    {
+        "word": "Ibanininuje",
+        "meaning": "Grief",
+        "options": [
+            "Ìbaninínùjẹ́",
+            "Ìyègìmọ̀lẹ̀sè",
+            "Ìbaninínùjé"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Idanilaraya",
+        "meaning": "Entertainment",
+        "options": [
+            "Ìdániláráyá",
+            "Ìdánilárayá",
+            "Ìdánilàràyà"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ifowororiku",
+        "meaning": "Natural Death",
+        "options": [
+            "Ìfọwọrọ̀rìkù",
+            "Ìfọwọrọríkù",
+            "Ìfọwọrọ́rikú"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Ilonilowogba",
+        "meaning": "Extortion",
+        "options": [
+            "Ìlọ́nilọ́wọ́gbà",
+            "Ìlọ́nilòwògbà",
+            "Ìlọ́nìlọ̀wògbà"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Gadagbagadagba",
+        "meaning": "Boldly",
+        "options": [
+            "Gadagbagàdàgbà",
+            "Gàdàgbàgadagba",
+            "Gádágbágadagba"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Oniyemeji",
+        "meaning": "Boldly",
+        "options": [
+            "Gadagbagàdàgbà",
+            "Oníyèméji",
+            "Oníyèméjì"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Lojumejeji",
+        "meaning": "Diligently",
+        "options": [
+            "Lójúméjèjì",
+            "Lójúmẹ̀jéjí",
+            "Lòjúmẹ̀jéjí"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Iberubojo",
+        "meaning": "Panic",
+        "options": [
+            "Ìbèrùbòjò",
+            "Ìbèrùbojo",
+            "Ìbèrúbojó"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Imutipara",
+        "meaning": "Drunkness",
+        "options": [
+            "ìmutìpàrà",
+            "ìmutìpará",
+            "ìmutípara"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "ifesemule",
+        "meaning": "Building Foundation",
+        "options": [
+            "ìfẹsẹ̀múlẹ̀",
+            "ìfẹsèmúlé",
+            "ìfẹsẹ̀múle"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Olukuluku",
+        "meaning": "Individual",
+        "options": [
+            "Òlúkùlùkù",
+            "Olúkúlùkù",
+            "Olúkúlùkù"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Olukuluku",
+        "meaning": "Individual",
+        "options": [
+            "Òlúkùlùkù",
+            "Olúkúlùkù",
+            "Olúkúlùkù"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Kikiyesara",
+        "meaning": "Watchful",
+        "options": [
+            "kíkíyèsára",
+            "kíkíyèṣarà",
+            "kíkíyẹ̀sárà"
+        ],
+        "correctIndex": 0
     }]
 }
 

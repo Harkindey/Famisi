@@ -87,6 +87,7 @@ class Main extends React.Component {
   renderQuestion() {
     console.log(this.state);
     let { question, color, score } = this.state
+    console.log(question.length);
     const index = Math.floor(Math.random() * question.length);
     const colorGroup = Math.floor(Math.random() * 50);
     const colorindex = Math.floor(Math.random() * 5);
