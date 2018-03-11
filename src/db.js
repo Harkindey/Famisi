@@ -138,6 +138,166 @@ const db = {
             "èkún"
         ],
         "correctIndex": 1
+    },
+    {
+        "word": "Pataki",
+        "meaning": "Importance",
+        "options": [
+            "Pátákí",
+            "Patàkí",
+            "Pàtàkì"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Irawe",
+        "meaning": "Dried Leaf",
+        "options": [
+            "Ìràwé",
+            "Ìrawe",
+            "Íràwé"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Patako",
+        "meaning": "Blackboard",
+        "options": [
+            "Pàtàkò",
+            "Pátákó",
+            "Pàtakọ́"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Abere",
+        "meaning": "Needle",
+        "options": [
+            "Abèrè",
+            "Ábẹ̀ré",
+            "Abẹ́rẹ́"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Opo",
+        "meaning": "widow",
+        "options": [
+            "Opó",
+            "Opo",
+            "Òpó"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Omoge",
+        "meaning": "Lady",
+        "options": [
+            "Ọ́mọ́gé",
+            "Ọmọge",
+            "Ọ̀mọ̀gè"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ilu",
+        "meaning": "Town",
+        "options": [
+            "Ílù",
+            "Ìlu",
+            "Ìlú"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Aworan",
+        "meaning": "Phtotograph",
+        "options": [
+            "Àwòrán",
+            "Áwóràn",
+            "Aworán"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Ifun",
+        "meaning": "Intestine",
+        "options": [
+            "Ífun",
+            "Ìfun",
+            "Ifun"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Ogiri",
+        "meaning": "Wall",
+        "options": [
+            "Ògìrì",
+            "Ógírì",
+            "Ògiri"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "sokoto",
+        "meaning": "Trouser",
+        "options": [
+            "sòkòtò",
+            "sókótó",
+            "sokoto"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "orisun",
+        "meaning": "Trouser",
+        "options": [
+            "òrìṣun",
+            "orísun",
+            "ọ̀rísùn"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Eniyan",
+        "meaning": "Trouser",
+        "options": [
+            "Èníyan",
+            "Ènìyán",
+            "Ènìyàn"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Idile",
+        "meaning": "Trouser",
+        "options": [
+            "Ìdílé",
+            "Ìdíle",
+            "Ìdìlè"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Alaye",
+        "meaning": "Trouser",
+        "options": [
+            "Àlàyé",
+            "Àlàyè",
+            "Áláyè"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Okuta",
+        "meaning": "Trouser",
+        "options": [
+            "Òkútá",
+            "Òkùtà",
+            "Òkúta"
+        ],
+        "correctIndex": 2
     }],
     intermediate: [{
         "word": "Ketekete",
