@@ -368,6 +368,46 @@ const db = {
             "Ojúmọmọ"
         ],
         "correctIndex": 2
+    },
+    {
+        "word": "Kolokolo",
+        "meaning": "Fox",
+        "options": [
+            "kọ̀lọ̀kọ̀lọ̀",
+            "kọlọkọlọ",
+            "kọ́lọ́kọ́lọ́"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "word": "Ijakadi",
+        "meaning": "Fox",
+        "options": [
+            "Ijàkàdì",
+            "Ijàkadì",
+            "Ìjakádì"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Igbiyanju",
+        "meaning": "Trail",
+        "options": [
+            "Ìgbìyànjú",
+            "Ìgbìyànjù",
+            "Ìgbìyànjú"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "word": "Monomono",
+        "meaning": "Fire Flies",
+        "options": [
+            "Mọ́nọ́mọ́nọ́",
+            "Mònòmònò",
+            "Mọnọmọnọ"
+        ],
+        "correctIndex": 0
     }],
     hard: [{
         "word": "Iseyemeji",
@@ -648,6 +688,26 @@ const db = {
             "Abánìdàrò"
         ],
         "correctIndex": 0
+    },
+    {
+        "word": "Alabojuto",
+        "meaning": "Supervisor",
+        "options": [
+            "Alábòjùtò",
+            "Alábòjútó",
+            "Alábòjútò"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "word": "Onikupani",
+        "meaning": "Betrayer",
+        "options": [
+            "Oníkùpànì",
+            "Oníkúpaní",
+            "Oníkúpani"
+        ],
+        "correctIndex": 2
     }]
 }
 
