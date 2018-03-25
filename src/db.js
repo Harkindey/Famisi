@@ -240,7 +240,7 @@ const db = {
         "correctIndex": 2
     },
     {
-        "word": "sokoto",
+        "word": "Sokoto",
         "meaning": "Trouser",
         "options": [
             "sòkòtò",
@@ -251,7 +251,7 @@ const db = {
     },
     {
         "word": "orisun",
-        "meaning": "Trouser",
+        "meaning": "source",
         "options": [
             "òrìṣun",
             "orísun",
@@ -261,7 +261,7 @@ const db = {
     },
     {
         "word": "Eniyan",
-        "meaning": "Trouser",
+        "meaning": "Person",
         "options": [
             "Èníyan",
             "Ènìyán",
@@ -271,7 +271,7 @@ const db = {
     },
     {
         "word": "Idile",
-        "meaning": "Trouser",
+        "meaning": "Family",
         "options": [
             "Ìdílé",
             "Ìdíle",
@@ -281,7 +281,7 @@ const db = {
     },
     {
         "word": "Alaye",
-        "meaning": "Trouser",
+        "meaning": "Explain",
         "options": [
             "Àlàyé",
             "Àlàyè",
@@ -291,7 +291,7 @@ const db = {
     },
     {
         "word": "Okuta",
-        "meaning": "Trouser",
+        "meaning": "Stone",
         "options": [
             "Òkútá",
             "Òkùtà",
@@ -433,7 +433,7 @@ const db = {
         "word": "Amotekun",
         "meaning": "Leopard",
         "options": [
-            "Àmọ̀tẹ̀kùn",
+            "Àmọ̀tẹ́kùn",
             "Àmọ̀tekún",
             "Àmòtèkùn"
         ],
@@ -880,12 +880,12 @@ const db = {
         "correctIndex": 0
     },
     {
-        "word": "Alabojuto",
+        "word": "Alabojuuto",
         "meaning": "Supervisor",
         "options": [
-            "Alábòjùtò",
-            "Alábòjútó",
-            "Alábòjútò"
+            "Alábòjùútò",
+            "Alábòjúutó",
+            "Alábòjúutò"
         ],
         "correctIndex": 1
     },
