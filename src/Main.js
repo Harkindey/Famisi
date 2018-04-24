@@ -85,9 +85,7 @@ class Main extends React.Component {
   }
 
   renderQuestion() {
-    console.log(this.state);
     let { question, color, score } = this.state
-    console.log(question.length);
     const index = Math.floor(Math.random() * question.length);
     const colorGroup = Math.floor(Math.random() * 50);
     const colorindex = Math.floor(Math.random() * 5);
@@ -105,7 +103,6 @@ class Main extends React.Component {
             CountdownCircleVisible: true,
             startCountDown: true
           })
-          // console.log(score);
         } else {
           this.setState({
             score: score += 1,
@@ -114,7 +111,6 @@ class Main extends React.Component {
           })
         }
       } else {
-        console.log(score);
         console.log('Wrong Answer')
         this.setState({ ismodalVisible: true });
       }
@@ -129,6 +125,7 @@ class Main extends React.Component {
             color="#ff003f"
             bgColor="#fff"
             textStyle={{ fontSize: 20 }}
+            reStart
             onTimeElapsed={() => {
               console.log('Elapsed!')
               this.setState({ ismodalVisible: true });
