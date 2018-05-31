@@ -2,6 +2,8 @@
 #
 .DS_Store
 
+/android/app/build.gradle
+
 # Xcode
 #
 build/

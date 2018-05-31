@@ -674,7 +674,7 @@ const db = {
         "meaning": "cunning person",
         "options": [
             "Alárèkẹrẹ́ké",
-            "Alárèkérèkè",
+            "Alárẹ́kérekè",
             "Àlárẹ̀kérẹ̀ké"
         ],
         "correctIndex": 1
@@ -685,7 +685,7 @@ const db = {
         "options": [
             "Ìyẹ̀gímọ̀lésẹ̀",
             "Ìyègìmọ̀lẹ̀sè",
-            "Ìyegimólésè"
+            "Ìyẹgimólẹ́sẹ̀"
         ],
         "correctIndex": 2
     },
@@ -693,8 +693,8 @@ const db = {
         "word": "Ibanininuje",
         "meaning": "Grief",
         "options": [
+            "Ìbaninínújẹ́",
             "Ìbaninínùjẹ́",
-            "Ìyègìmọ̀lẹ̀sè",
             "Ìbaninínùjé"
         ],
         "correctIndex": 0
@@ -715,7 +715,7 @@ const db = {
         "options": [
             "Ìfọwọrọ̀rìkù",
             "Ìfọwọrọríkù",
-            "Ìfọwọrọ́rikú"
+            "Ìfọwọ́rọríkú"
         ],
         "correctIndex": 2
     },
@@ -734,16 +734,16 @@ const db = {
         "meaning": "Boldly",
         "options": [
             "Gadagbagàdàgbà",
-            "Gàdàgbàgadagba",
+            "Gàdàgbàgàdàgbà",
             "Gádágbágadagba"
         ],
         "correctIndex": 1
     },
     {
         "word": "Oniyemeji",
-        "meaning": "Boldly",
+        "meaning": "Doubter",
         "options": [
-            "Gadagbagàdàgbà",
+            "Oniyemeji",
             "Oníyèméji",
             "Oníyèméjì"
         ],
@@ -764,7 +764,7 @@ const db = {
         "meaning": "Panic",
         "options": [
             "Ìbèrùbòjò",
-            "Ìbèrùbojo",
+            "Ìbẹ̀rùbojo",
             "Ìbèrúbojó"
         ],
         "correctIndex": 1
